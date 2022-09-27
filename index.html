@@ -15,7 +15,9 @@
     <div class="layui-layout layui-layout-admin">
       <div class="layui-header" >
         <div class="layui-logo layui-hide-xs layui-bg-black layui-bg-black22">
-           放logo2
+         <div href="" class="log">
+             <img src="" alt="">
+         </div> 
         </div>
         
         <span class="dsd"> OMST公司文件管理</span>
@@ -89,15 +91,26 @@
                 
               </li>
             -->
+            <li class="layui-nav-item">
+              <a href="javascript:;">公司总则</a>
+              <dl class="layui-nav-child">
+                <dd><a href="./home/gsgl.html" target="aaas">公司管理总则</a></dd>
+                <!-- <dd><a href="./home/gsg2.html" target="aaas">实验室管理规定</a></dd> -->
+                <!-- <dd><a href="./home/gsg3.html" target="aaas">危废管理</a></dd> -->
+                <!-- <dd><a href="./home/yshi.html" target="aaas">人事劳务文件</a></dd> -->
+                <dd><a href="./home/hetong.html" target="aaas">公司合同相关</a></dd>
+                <dd><a href="./home/gsgl.html" target="aaas">公司专利相关</a></dd>
+              </dl>
+            </li>
               
               <li class="layui-nav-item layui-nav-itemed">
                 <a href="javascript:;">实验室管理文件M</a>
                 <dl class="layui-nav-child">
                   <dd><a href="./home/omst-l-m1.html" target="aaas"> OMST-L-M2实验室管理规定</a>
                   </dd>
-                  <dd><a href="./home/omst-l-m2.html" target="aaas"> OMST-L-M2安全管理规定</a>
+                  <dd><a href="./home/pdf/CX032-OMST 实验室安全事故应急处置程序.pdf" target="aaas"> OMST-L-M2安全管理规定</a>
                      </dd>
-                  <dd><a href="./home/omst-l-m3.html" target="aaas">OMST-L-M3 原材料管理</a></dd>
+                  <dd><a href="./home/pdf/CX021样品管理程序.pdf" target="aaas">OMST-L-M3 样品管理</a></dd>
                   <dd><a href="./home/omst-l-m4.html" target="aaas">OMST-L-M4 5S</a></dd>
                 </dl>
               </li>
@@ -114,8 +127,8 @@
               <li class="layui-nav-item">
                 <a href="javascript:;">设备管理文件E</a>
                 <dl class="layui-nav-child">
-                  <dd><a href="./home/pdf/CX018设备管理程序.pdf" target="aaas">OMST-L-E1维保计划</a></dd>
-                  <dd><a href="./home/pdf/JS052-2《仪器验收登记表》.pdf" target="aaas">OMST-L-E2维修记录单</a></dd>
+                  <dd><a href="./home/pdf/CX018设备管理程序.pdf" target="aaas">OMST-L-E1设备管理计划</a></dd>
+                  <dd><a href="./home/pdf/CX006服务和供应品采购控制程序.pdf" target="aaas">OMST-L-E2采购控制</a></dd>
                   <dd><a href="./home/pdf/JS066内部校准记录.pdf" target="aaas">OMST-L-E3校准文件</a></dd>
                   <dd><a href="./home/shebai.html" target="aaas">OMST-L-E4设备说明书</a></dd>
                 </dl>
@@ -128,20 +141,20 @@
                   </dd>
                   <dd><a href="./home/s3.html" target="aaas">S3测试方法（研发部）</a></dd>
                   <dd><a href="./home/s4.html" target="aaas">S4设备维保sop</a></dd>
-                  <dd><a href="./home/s5.html" target="aaas">S5标准参考文献</a></dd>
+                  <!-- <dd><a href="./home/s5.html" target="aaas">S5标准参考文献</a></dd> -->
                 </dl>
               </li>
-              <li class="layui-nav-item">
+              <!-- <li class="layui-nav-item">
                 <a href="javascript:;">公司管理规定</a>
                 <dl class="layui-nav-child">
                   <dd><a href="./home/gsgl.html" target="aaas">公司管理总则</a></dd>
                   <dd><a href="./home/gsg2.html" target="aaas">实验室管理规定</a></dd>
-                  <dd><a href="./home/gsg3.html" target="aaas">危废管理</a></dd>
-                  <dd><a href="./home/yshi.html" target="aaas">人事劳务文件</a></dd>
+                   <dd><a href="./home/gsg3.html" target="aaas">危废管理</a></dd> 
+                   <dd><a href="./home/yshi.html" target="aaas">人事劳务文件</a></dd> 
                   <dd><a href="./home/hetong.html" target="aaas">合同</a></dd>
                   <dd><a href="./home/gsgl.html" target="aaas">专利相关</a></dd>
                 </dl>
-              </li>
+              </li> -->
              
             </ul>
         </div>
@@ -171,15 +184,15 @@
 
       })
 
-      $.get('http://127.0.0.1:3000/denghlu/login4', function (res) {
-        // status 为 0 表示获取用户名称成功；否则表示获取用户名称失败！
-        if (res.status !== 0) {
-          alert('您尚未登录，请登录后再执行此操作！')
-          location.href = './omst-login.html'
-        } else {
-          alert('欢迎您：' + res.username)
-        }
-      })
+      // $.get('http://127.0.0.1:3000/denghlu/login4', function (res) {
+      //   // status 为 0 表示获取用户名称成功；否则表示获取用户名称失败！
+      //   if (res.status !== 0) {
+      //     alert('您尚未登录，请登录后再执行此操作！')
+      //     location.href = './omst-login.html'
+      //   } else {
+      //     alert('欢迎您：' + res.username)
+      //   }
+      // })
  
         
  })

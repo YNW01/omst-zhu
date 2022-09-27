@@ -33,7 +33,7 @@ iframe {
     position:relative;
 }
 .sssssss {
-   background-color: ;
+ 
     width: 220px;
     height: 40px;
 }
@@ -48,4 +48,8 @@ iframe {
 
     width: 50px;
     height: 40px;
+}
+.log {
+    background-color:red ;
+    
 }
